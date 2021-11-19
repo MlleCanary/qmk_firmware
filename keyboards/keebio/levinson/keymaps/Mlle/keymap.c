@@ -37,16 +37,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------------------------------------------------.
  * | `~  |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  | -_    |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | __  |  __  | __    |   Up  | ___ | PgUp | Mute  |Vol+  | ___|   |\  | =+  |  Bksp |
+ * | __  |  __  | __  | Up  | ___ | PgUp | Mute |Vol+| Play/Pause|   |\  | =+  |  Bksp |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * | Shift|RGB  |Left  | Down  | Rght  | PgDwn| Prev  |  Vol- |  Next | ___ |  [{ | }] |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |Calc| Ctrl | ___ | ___ |___ |Layer |Layer |____ | ____ | Space |  Layer  |Layer |
+ * |Calc| Ctrl | ___ | ___ |___ | Layer |Layer |  ____ | ____ | Space |  Layer  |Layer |
  * `-----------------------------------------------------------------------------------'
  */
 [_ONE] = LAYOUT_ortho_4x12( \
   KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,       KC_6,    KC_7,    KC_8,    KC_9,    KC_0,       KC_MINS, \
-_______, _______, _______,   KC_UP,  _______, _______,    KC_MUTE,   KC_VOLU,   _______,   KC_BSLS,    KC_EQL,    KC_BSPC, \
+_______, _______, _______,   KC_UP,  _______, _______,    KC_MUTE,   KC_VOLU,   KC_MPLY,   KC_BSLS,    KC_EQL,    KC_BSPC, \
   KC_LSFT, RGB_TOG, KC_LEFT, KC_DOWN, KC_RGHT, _______,    KC_MPRV,  KC_VOLD,  KC_MNXT, _______,   KC_LBRC,   KC_RBRC , \
   KC_CALC,  KC_LCTL, _______, _______, _______,   BASE,    BASE,  _______,   _______,   KC_SPC,    BASE,    BASE \
 ),
