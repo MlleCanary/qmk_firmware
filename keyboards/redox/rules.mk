@@ -20,7 +20,7 @@ VIA_ENABLE = yes
 
 SPLIT_KEYBOARD = yes
 
-DEFAULT_FOLDER = redox/rev1
+DEFAULT_FOLDER = redox/rev1/base
 
 # Disable unsupported hardware
 AUDIO_SUPPORTED = no
